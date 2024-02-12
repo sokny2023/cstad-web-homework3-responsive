@@ -1,0 +1,165 @@
+/* desing responsvie form small to big device */
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Kantumruy+Pro&family=Koulen&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+/* margin for header and main */
+.spacing{
+    margin: 0 20px;
+} 
+
+header{
+    width: 96vw;
+    height: 80px;
+    & .header-container{
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        object-fit: contain;
+        justify-content: space-between;
+        align-items: center;
+        & .logo{
+            display: flex;
+            align-items: center;
+            & a > img {
+            width: 40px;
+            }
+            h3{
+                margin-left: 10px;
+                color: crimson;
+                display: none;
+            }
+        }
+        & nav{
+            width: 55%;
+            & input{
+                width: 100%;
+                padding: 7px 20px;
+                background-color: rgba(248, 237, 238, 0.723);
+                border-radius: 5px;
+                font-size: 18px;
+                box-shadow: 2px 2px 1px rgba(240, 235, 235, 0.651);
+                border: none;
+                outline: none;
+            }
+            & input:hover{
+                background-color: rgba(244, 226, 228, 0.91);
+            }
+            & input:focus{
+                transition: 0.2s;
+                background-color: rgba(248, 237, 238, 0.723);
+                border: 1px solid rgba(213, 127, 127, 0.581);
+                box-shadow: 2px 2px 2px rgba(213, 127, 127, 0.295);
+            }
+        }
+        & .login{
+            padding: 8px 17px;
+            border-radius: 5px;
+            background-color: crimson;
+            & a{
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &:hover{
+                background-color: rgb(184, 23, 55);
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.main-container{
+    width: 96.5vw;
+    height: auto;
+    background-color: rgb(243, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+    & .img-container{
+        margin: 20px 10px;
+        /* width: 95%;
+        height: 98%; */
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: repeat(50, 150px);
+        justify-content: center;
+        align-items: start;
+        overflow: hidden;
+        & .imgs{
+            width: 100%;
+            height: 100%;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            border-radius: 10px;
+            overflow: hidden;
+            & img{
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        & .img1{
+           grid-row: 1 / 5;
+        }
+        & .img2{
+            grid-row: 5 / 10;
+         }
+    }
+}
+
+
+/* ----- Responsive ------ */
+
+/* Tablat */
+@media (min-width: 768px){
+    .spacing{
+        margin: 0 30px;
+    }
+
+    /* navbar */ 
+    header > .header-container > nav{
+        width: 75%;
+    }
+
+    /* main */
+    .main-container{
+        width: 98vw;
+    }
+    
+}
+
+
+/* laptop */
+@media (min-width: 1024px){
+    .spacing{
+        margin: 0 50px;
+    } 
+
+    /* navbar */
+    header >.header-container > nav{
+        width: 65%;
+    }
+    header > .header-container > .logo > h3{
+        display: block;
+    }
+
+    /* main */
+    .main-container{
+        width: 98.5vw;
+    }
+}
