@@ -135,6 +135,27 @@ header{
         & .img7{
             grid-row: 24 / 27;
         }
+        & .img8{
+            grid-row: 27 / 30;
+        }
+        & .img9{
+            grid-row: 30 / 34;
+        }
+        & .img10{
+            grid-row: 34 / 37;
+        }
+        & .img11{
+            grid-row: 37 / 40;
+        }
+        & .img12{
+            grid-row: 40 / 44;
+        }
+        & .img13{
+            grid-row: 44 / 48;
+        }
+        & .img14{
+            grid-row: 48 / 53;
+        }
         
     }
 }
