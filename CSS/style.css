@@ -95,6 +95,7 @@ header{
         grid-template-rows: repeat(50, 150px);
         justify-content: center;
         align-items: start;
+        gap: 15px;
         overflow: hidden;
         & .imgs{
             width: 100%;
@@ -117,8 +118,24 @@ header{
            grid-row: 1 / 5;
         }
         & .img2{
-            grid-row: 5 / 10;
-         }
+            grid-row: 5 / 8;
+        }
+        & .img3{
+            grid-row: 8 / 14;
+        }
+        & .img4{
+            grid-row: 14 / 18;
+        }
+        & .img5{
+            grid-row: 18 / 21;
+        }
+        & .img6{
+            grid-row: 21 / 24;
+        }
+        & .img7{
+            grid-row: 24 / 27;
+        }
+        
     }
 }
 
